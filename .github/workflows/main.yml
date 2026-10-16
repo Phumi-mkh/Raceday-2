@@ -19,10 +19,10 @@ jobs:
         dotnet-version: 8.0.x
         
     - name: Restore dependencies
-      run: dotnet restore
+      run: dotnet restore "./Raceday 2/Raceday 2.sln"
       
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build "./Raceday 2/Raceday 2.sln" --no-restore
       
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test "./Raceday 2/Raceday 2.sln" --no-build --verbosity normal
